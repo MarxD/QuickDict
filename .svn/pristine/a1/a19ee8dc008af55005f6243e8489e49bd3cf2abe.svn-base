@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etPutInEnglishWords"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="输入英文单词..." />
+
+        <EditText
+            android:id="@+id/etPutInChineseTranslation"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="输入中文翻译..." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="添加" />
+
+            <Button
+                android:id="@+id/btReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重置" />
+
+            <Button
+                android:id="@+id/btCancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

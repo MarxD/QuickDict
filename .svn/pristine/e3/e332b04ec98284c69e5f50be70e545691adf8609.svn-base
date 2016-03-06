@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <TextView
+        android:id="@+id/tvCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#1979CA"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="2016/01/19"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvCreated"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/tvEnglishNewWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="8dp"
+            android:text="absolutely"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvChineseTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnglishNewWords"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="当然;完全地;绝对不;完全没有;极其"
+            android:textSize="15sp" />
+
+        <com.gsd09.adapter.MyButton
+            android:id="@+id/ibDeleteThisNewWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvChineseTranslation"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/delete_unselect" />
+
+        <ImageView
+            android:id="@+id/ivLibraryPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ibDeleteThisNewWords"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:paddingRight="3dp"
+            android:src="@drawable/new_words_custom" />
+    </RelativeLayout>
+
+</RelativeLayout>

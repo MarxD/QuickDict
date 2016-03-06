@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="Icon_youdao">@drawable/icon_youdao</drawable>
+    <drawable name="Icon_baidu">@drawable/icon_baidu</drawable>
+    <drawable name="Icon_local">@drawable/icon_local</drawable>
+    
+</resources>

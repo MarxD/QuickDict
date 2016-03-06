@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E8E5F0"
+    >
+    
+    <EditText android:id="@+id/et_sourceword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入查询单词"
+        android:singleLine="true"
+         android:background="@android:drawable/editbox_background"
+        android:imeOptions="actionSearch"
+        />
+    
+    <ScrollView
+        android:layout_below="@+id/et_sourceword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+         >
+	
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    
+    <RelativeLayout 
+        android:background="@drawable/content_translatio"
+        android:id="@+id/layout_youdao"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       
+        >
+        <ImageView 
+            android:id="@+id/icon_youdao"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/Icon_youdao"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_ch_youdao"
+            android:layout_below="@+id/icon_youdao"
+           	android:layout_width="match_parent"
+           	android:layout_height="wrap_content"
+           	android:text="待查询"
+           	android:maxLines="1"
+           	android:textSize="20dp"
+            />
+        
+        
+       <TextView android:id="@+id/tv_en_youdao"
+           android:gravity="fill_horizontal"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/tv_ch_youdao"
+			android:layout_height="wrap_content"
+			android:text="wait for your query"
+			android:maxLines="3"      
+			android:textSize="20dp"     
+           />
+       
+       <ImageView android:id="@+id/btn_add"
+           android:clickable="true"
+           android:layout_alignTop="@+id/icon_youdao"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/selector_btn_add" 
+           />
+    </RelativeLayout>
+    
+        <RelativeLayout 
+        android:background="@drawable/content_translatio"
+        android:id="@+id/layout_baidu"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ImageView 
+            android:id="@+id/icon_baidu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/Icon_baidu"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_ch_baidu"
+            android:layout_below="@+id/icon_baidu"
+           	android:layout_width="match_parent"
+           	android:layout_height="wrap_content"
+           	android:text="待查询"
+           	android:maxLines="1"
+           	android:textSize="20dp"
+            />
+        
+        
+       <TextView android:id="@+id/tv_en_baidu"
+           android:gravity="fill_horizontal"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/tv_ch_baidu"
+			android:layout_height="wrap_content"
+			android:text="wait for your query"
+			android:maxLines="3"      
+			android:textSize="20dp"     
+           />
+       
+       <ImageView android:id="@+id/btn_add_baidu"
+           android:clickable="true"
+           android:layout_alignTop="@+id/icon_baidu"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/selector_btn_add" 
+           />
+    </RelativeLayout>
+    
+    
+    
+        <RelativeLayout 
+        android:background="@drawable/content_translatio"
+        android:id="@+id/layout_local"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ImageView 
+            android:id="@+id/icon_local"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/Icon_local"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_ch_local"
+            android:layout_below="@+id/icon_local"
+           	android:layout_width="match_parent"
+           	android:layout_height="wrap_content"
+           	android:text="待查询"
+           	android:maxLines="1"
+           	android:textSize="20dp"
+            />
+        
+        
+       <TextView android:id="@+id/tv_en_local"
+           android:gravity="fill_horizontal"
+           android:layout_width="match_parent"
+           android:layout_below="@+id/tv_ch_local"
+			android:layout_height="wrap_content"
+			android:text="wait for your query"
+			android:maxLines="3"      
+			android:textSize="20dp"     
+           />
+       
+       <ImageView android:id="@+id/btn_add_local"
+           android:clickable="true"
+           android:layout_alignTop="@+id/icon_local"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/selector_btn_add" 
+           />
+    </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

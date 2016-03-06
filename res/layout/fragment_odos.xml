@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:id="@+id/rlOdos"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dip"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            style="@style/publicloadingProgressStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:text="正在加载中……"
+            android:textColor="@android:color/black"
+            android:textSize="20dip" />
+    </LinearLayout>
+    <ScrollView 
+        android:id="@+id/sv_odos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="10dip"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	        
+            <ImageView 
+                android:id="@+id/iv_odos"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:scaleType="fitXY"
+                />
+            
+			<TextView 
+                android:id="@+id/tv_odos_english"
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dip" 
+                android:textColor="#12B8EB"
+                android:text="It is better to live your own destiny imperfectly than to live an imitation of somebody else’s life with perfection."
+                />
+            <TextView 
+                android:id="@+id/tv_odos_chinese"
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dip" 
+                android:text="不完美地走自己的命运比完美地模仿别人的生活还要好。（The Bhagavad Gita）"
+                />
+            
+            <TextView 
+                android:id="@+id/tv_odos_translation"
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#656565"
+                android:textSize="18dip" 
+                android:text="词霸小编：我每天都会找一个满足自己存在于这个世界的感觉，有时是一杯咖啡，有时是一部电影，有时是一段适合散步的街道，有时只是一幅画面。而我们只需要一颗简单的心就能享有这世界的一切。--朱德庸【升级至词霸最新版，最权威的离线牛津词典，无需网络，也能发现英文之美！】"
+                />
+        </LinearLayout>
+	</ScrollView>
+</RelativeLayout>
