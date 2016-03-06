@@ -55,10 +55,11 @@ public class OptionFragment extends BaseFragment implements OnCheckedChangeListe
 	private void setListener() {
 		switch_clip.setOnCheckedChangeListener(this);
 		rg_source.setOnCheckedChangeListener(this);
+		switch_clip.setChecked(setting.getBoolean("running", false));
 		
 	}
 	/**
-	 * 初始化控件，读取SharedPreferences并设置状态
+	 * 初始化控件
 	 */
 	private void setView() 
 	{
@@ -67,7 +68,6 @@ public class OptionFragment extends BaseFragment implements OnCheckedChangeListe
 		rb_local = (RadioButton)v.findViewById(R.id.rb_local);
 		rb_baidu = (RadioButton)v.findViewById(R.id.rb_baidu);
 		rb_youdao = (RadioButton)v.findViewById(R.id.rb_youdao);
-		switch_clip.setChecked(setting.getBoolean("running", false));
 		
 	}
 	
