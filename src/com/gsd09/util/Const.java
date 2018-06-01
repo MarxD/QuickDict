@@ -3,21 +3,21 @@ package com.gsd09.util;
 import android.os.Environment;
 
 /**
- * ´æ·Åµ÷ÓÃAPIĞèÒªµÄ²ÎÊı£¬ÍøÖ·£¬API,KEYµÈ
+ * å­˜æ”¾è°ƒç”¨APIéœ€è¦çš„å‚æ•°ï¼Œç½‘å€ï¼ŒAPI,KEYç­‰
  * @author Marx
  *
  */
 public class Const
 {
 	public static final String BASE_URL_YOUDAO = "http://fanyi.youdao.com/openapi.do";
-	public static final String APP_FROM_YOUDAO = "Android-MyAPP";
-	public static final String key = "1344685129";
+	public static final String APP_FROM_YOUDAO = "test";
+	public static final String key = "test";
 	public static final String BASE_URL_BAIDU ="http://api.fanyi.baidu.com/api/trans/vip/translate";
-	public static final String APPID_BAIDU="20160222000013010";
-	public static final String BAIDU_KEY="2bjbdWAI9emCE8o5Ym_q";
-	//ÉùÃ÷ÊÖ»úÏµÍ³¸ùÄ¿Â¼¾ø¶ÔÂ·¾¶
+	public static final String APPID_BAIDU="test";
+	public static final String BAIDU_KEY="test";
+	//å£°æ˜æ‰‹æœºç³»ç»Ÿæ ¹ç›®å½•ç»å¯¹è·¯å¾„
 	public static final String  SDCARD_ROOT=Environment.getExternalStorageDirectory().getAbsolutePath();
-	//ÉùÃ÷odosÍ¼Æ¬»º´æÄ¿Â¼
+	//å£°æ˜odoså›¾ç‰‡ç¼“å­˜ç›®å½•
 	public static final String  AUDIO_PATH=SDCARD_ROOT+"/QuickDict/images";
 	
 	public static final String ACTION_CHANGED_SOURCE = "ACTION_CHANGED_SOURCE";
